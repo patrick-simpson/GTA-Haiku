@@ -4,7 +4,6 @@ export default defineConfig({
   base: '/gta-haiku/',
   build: {
     target: 'es2020',
-    minify: 'terser',
     sourcemap: false,
     rollupOptions: {
       output: {

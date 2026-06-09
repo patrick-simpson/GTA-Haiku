@@ -14,11 +14,10 @@
     "strictFunctionTypes": true,
     "sourceMap": false,
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "declaration": true,
-    "declarationMap": false,
+    "declaration": false,
     "outDir": "./dist",
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "noEmit": true
   },
   "include": ["src"],
   "exclude": ["dist", "node_modules"]
