@@ -36,7 +36,12 @@ export class Renderer {
 
     const canvas = this.renderer.domElement;
     canvas.style.display = 'block';
-    document.body.appendChild(canvas);
+    const appContainer = document.getElementById('app');
+    if (appContainer) {
+      appContainer.insertBefore(canvas, appContainer.firstChild);
+    } else {
+      document.body.appendChild(canvas);
+    }
 
     this.setupLighting();
     this.setupEventListeners();
