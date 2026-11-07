@@ -12,3 +12,6 @@ yarn-error.log*
 *~
 .env.local
 .env.*.local
+
+# Claude Code local settings (may hold secrets from approved commands)
+.claude/settings.local.json
